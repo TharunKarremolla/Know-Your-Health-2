@@ -10,6 +10,8 @@ import { useEffect, useState } from 'react';
 import Home from "./components/Home";
 import Schedule from "./components/Schedule";
 import ProtectedRoute from './components/ProtectedRoute';
+import MyAppointments from "./components/MyAppointments";
+import MyLab from "./components/MyLab";
 
 function App() {
   const [user,setUser] = useState('')
@@ -42,6 +44,7 @@ function App() {
     
   <Router>
       <Navbar user={user} setUser = {setUser} />
+  
     <Routes>
 
         
@@ -55,7 +58,7 @@ function App() {
       
       <Route path="/" element={<ProtectedRoute><Main/></ProtectedRoute>}></Route>
     
-
+ <Route path="/MyAppointments" element={<ProtectedRoute><MyAppointments /></ProtectedRoute>}></Route>
         
       <Route path="/Home" element={<ProtectedRoute user={user}><Home/></ProtectedRoute>}></Route>
      
@@ -66,6 +69,8 @@ function App() {
     
   
     <Route path="/Schedule" element={<ProtectedRoute user={user}><Schedule/></ProtectedRoute>} />
+
+     <Route path="/MyLab" element={<ProtectedRoute user={user}><MyLab/></ProtectedRoute>} />
    
   
     </Routes>

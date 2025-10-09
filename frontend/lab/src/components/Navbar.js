@@ -29,6 +29,17 @@ export default function Navbar({user,setUser}){
 
         }
 
+        const handleChange= (e) => {
+          const value = e.target.value;
+        
+          if (value === 'All Labs'){
+            navigate('/Labs')
+          }else{
+            navigate('/MyLab')
+          }
+
+        }
+
 
     return (
         <div>
@@ -36,15 +47,18 @@ export default function Navbar({user,setUser}){
             <div>
         <h1>Know Your Health</h1>
      </div>
-     <div>
-      
-       <Link to='/Labs' className={styles.lablink}>Labs</Link>
+     <div className={styles.rightdiv}>
+      <select onChange={handleChange}>
+    <option className={styles.lablink}>MyLab</option>  
+    <option className={styles.lablink}>All Labs</option>  
+</select>
+       
         <Link to='/RegisterLab' className={styles.lablink}>Register Lab </Link>
+         <Link to='/MyAppointments' className={styles.lablink}>MyAppointments</Link>
       {!user ? <Link to='/Login'> <button className={styles.logbtn}>Login/Signup</button></Link> : <button onClick={handlelogout} className={styles.outbtn}>Logout</button>}
       </div>
         
         </nav>
-        {/* <Outlet /> */}
       
         </div>
     )

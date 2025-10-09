@@ -2,16 +2,27 @@ body{
    margin : 0
 }
 
-   .navBar{
+.navBar{
     background-color: #fff;
-      box-shadow: 0 0 0 1px rgba(140, 140, 140, 0.2), 
+    box-shadow: 0 0 0 1px rgba(140, 140, 140, 0.2), 
             0 2px 3px rgba(0, 0, 0, 0.05);
     margin-top: 0;
     padding: 20px 50px;
     display : flex;
     align-items: center;
     justify-content: space-between;
-   
+}
+
+.navBar select{
+    border: none;
+     padding: 5px;
+      font-size: x-large;
+         font-family: 'Times New Roman', Times, serif;
+         margin-right: 10px;
+}
+
+.navBar select option{
+    font-size: 18px;
 }
 
 h1{
@@ -24,21 +35,21 @@ h1{
     color: black;
     font-size: x-large;
     padding: 5px 10px;
+ 
 }   
 
 .lablink:hover{
-    background-color: rgb(221, 217, 217);
-    
+    background-color: rgb(221, 217, 217);   
 }
 
-.logbtn{
+/* .logbtn{
     padding: 10px 20px;
     background-color: transparent;
     border: 1px solid rgb(230, 225, 225);
     color:  gray
-}
+} */
 
-.outbtn{
+.navBar button{
  background-color:  transparent; 
     border: 1px solid rgb(230, 225, 225);
     padding: 10px 30px;

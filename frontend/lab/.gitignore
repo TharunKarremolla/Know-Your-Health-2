@@ -9,7 +9,7 @@ env.bak/
 .env.local
 .env.development
 .env.production
-.env.test
+.env.testx
 
 # Optional: ignore IDE/project settings
 .idea/

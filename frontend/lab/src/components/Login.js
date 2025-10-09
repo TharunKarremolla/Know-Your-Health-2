@@ -37,7 +37,7 @@ export default function({ setUser }){
            <input type='text' placeholder='Mobile / Email ID'  value={Mobile} onChange={(e)=>setMobile(e.target.value)}/><br/>
         <input type='text' placeholder='password'  value={password} onChange={(e)=>setPassword(e.target.value)} /> <br/>
           <button onClick={handleLogin} className={styles.logBtn}>Login</button>
-          <p>Existing User? <Link to='/register'>Sign Up</Link></p>
+          <p>New User? <Link to='/register'>Sign Up</Link></p>
           </div>
         </div>
     )

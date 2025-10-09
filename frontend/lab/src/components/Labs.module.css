@@ -12,6 +12,7 @@ body{
     padding: 10px 20px;
     box-shadow: 0 0 0 1px rgba(140, 140, 140, 0.2), 
             0 2px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
            
 }
 
@@ -25,8 +26,19 @@ body{
     cursor: pointer;
 }
 
-.labcard button{
+ button{
       background-color:  #13bef0;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.delbtn{
+    background-color:  #d9534f;;
     border: none;
     padding: 10px 20px;
     color: white;
@@ -34,4 +46,5 @@ body{
     /* width: 80%; */
     border-radius: 5px;
     margin-top: 15px;
+    margin: 0 10px;
 }

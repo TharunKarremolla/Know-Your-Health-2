@@ -2,6 +2,8 @@ import styles from './Register.module.css'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import logo from './logo.png';
 
 export default function Register(){
     const [username,setUsername] = useState('')
@@ -21,11 +23,15 @@ export default function Register(){
 
     return (
         <div className={styles.rdiv}>
+           <img src={logo} width={394}  alt="logo"/>
+           <div>
                   <h2>Register</h2>
            <input type='text' placeholder='username'  value={username} onChange={(e)=>setUsername(e.target.value)}/><br/>
             <input type='text' placeholder='email'  value={email} onChange={(e)=>setEmail(e.target.value)}/><br/>
         <input type='text' placeholder='password'  value={password} onChange={(e)=>setPassword(e.target.value)} /> <br/>
           <button onClick={handlesubmit}>SignUp</button>
+          <p>Existing User? <Link to='/Login'>Login</Link></p>
+          </div>
         </div>
 
     )

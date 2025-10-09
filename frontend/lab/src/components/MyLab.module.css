@@ -1,0 +1,21 @@
+.mylabDiv{
+     width: 400px;
+    margin: 50px auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.mylabDiv div {
+    box-shadow: 0 0 0 1px rgba(140, 140, 140, 0.2), 
+            0 2px 3px rgba(0, 0, 0, 0.05);
+    padding: 10px 10px 20px 20px;
+    margin-top: 20px;
+}
+
+.mylabDiv input{
+    width: 60%;
+    padding: 10px 15px;
+      border-radius: 5px;
+        border: 1px solid rgb(230, 225, 225);
+}

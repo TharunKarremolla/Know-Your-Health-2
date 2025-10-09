@@ -2,3 +2,14 @@
     width: 500px;
     margin: 50px auto;;
 }
+
+.schedDiv button{
+       background-color:  #13bef0;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
